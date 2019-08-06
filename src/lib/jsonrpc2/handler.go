@@ -10,9 +10,9 @@ import (
 	"github.com/davecgh/go-spew/spew"
 	"github.com/unrolled/render"
 
-	"github.com/abyssparanoia/rapid-go/src/lib/errcode"
-	"github.com/abyssparanoia/rapid-go/src/lib/log"
-	"github.com/abyssparanoia/rapid-go/src/lib/util"
+	"github.com/abyssparanoia/operationAPI-GCP/src/lib/errcode"
+	"github.com/abyssparanoia/operationAPI-GCP/src/lib/log"
+	"github.com/abyssparanoia/operationAPI-GCP/src/lib/util"
 )
 
 // Handler ... JSONRPC2に準拠したアクション

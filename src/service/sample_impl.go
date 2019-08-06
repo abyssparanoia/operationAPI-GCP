@@ -3,7 +3,7 @@ package service
 import (
 	"context"
 
-	"github.com/abyssparanoia/rapid-go/src/repository"
+	"github.com/abyssparanoia/operationAPI-GCP/src/repository"
 )
 
 type sample struct {

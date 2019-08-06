@@ -5,9 +5,9 @@ import (
 
 	"github.com/go-chi/chi"
 
-	"github.com/abyssparanoia/rapid-go/src/handler"
-	"github.com/abyssparanoia/rapid-go/src/lib/accesscontrol"
-	"github.com/abyssparanoia/rapid-go/src/lib/deploy"
+	"github.com/abyssparanoia/operationAPI-GCP/src/handler"
+	"github.com/abyssparanoia/operationAPI-GCP/src/lib/accesscontrol"
+	"github.com/abyssparanoia/operationAPI-GCP/src/lib/deploy"
 )
 
 // Routing ... ルーティング設定

@@ -10,7 +10,7 @@ import (
 	"google.golang.org/api/option"
 	pubsubpb "google.golang.org/genproto/googleapis/pubsub/v1"
 
-	"github.com/abyssparanoia/rapid-go/src/lib/log"
+	"github.com/abyssparanoia/operationAPI-GCP/src/lib/log"
 )
 
 // Client ...

@@ -3,8 +3,8 @@ package api
 import (
 	"net/http"
 
-	"github.com/abyssparanoia/rapid-go/src/lib/renderer"
-	"github.com/abyssparanoia/rapid-go/src/service"
+	"github.com/abyssparanoia/operationAPI-GCP/src/lib/renderer"
+	"github.com/abyssparanoia/operationAPI-GCP/src/service"
 )
 
 // SampleHandler ... サンプルのハンドラ

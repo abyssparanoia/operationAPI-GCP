@@ -9,7 +9,7 @@ services:
     depends_on:
       - db
     volumes:
-      - .:/go/src/github.com/abyssparanoia/rapid-go
+      - .:/go/src/github.com/abyssparanoia/operationAPI-GCP
     ports:
       - "8081:8081"
   db:

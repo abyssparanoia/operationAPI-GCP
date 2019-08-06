@@ -1,6 +1,6 @@
 FROM golang:1.12-alpine
 
-WORKDIR /go/src/github.com/abyssparanoia/rapid-go/
+WORKDIR /go/src/github.com/abyssparanoia/operationAPI-GCP/
 COPY . .
 
 ENV GO111MODULE=on

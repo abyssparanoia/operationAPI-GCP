@@ -1,14 +1,14 @@
 package main
 
 import (
-	"github.com/abyssparanoia/rapid-go/src/handler/api"
-	"github.com/abyssparanoia/rapid-go/src/lib/cloudfirestore"
-	"github.com/abyssparanoia/rapid-go/src/lib/deploy"
-	"github.com/abyssparanoia/rapid-go/src/lib/firebaseauth"
-	"github.com/abyssparanoia/rapid-go/src/lib/jsonrpc2"
-	"github.com/abyssparanoia/rapid-go/src/lib/log"
-	"github.com/abyssparanoia/rapid-go/src/repository"
-	"github.com/abyssparanoia/rapid-go/src/service"
+	"github.com/abyssparanoia/operationAPI-GCP/src/handler/api"
+	"github.com/abyssparanoia/operationAPI-GCP/src/lib/cloudfirestore"
+	"github.com/abyssparanoia/operationAPI-GCP/src/lib/deploy"
+	"github.com/abyssparanoia/operationAPI-GCP/src/lib/firebaseauth"
+	"github.com/abyssparanoia/operationAPI-GCP/src/lib/jsonrpc2"
+	"github.com/abyssparanoia/operationAPI-GCP/src/lib/log"
+	"github.com/abyssparanoia/operationAPI-GCP/src/repository"
+	"github.com/abyssparanoia/operationAPI-GCP/src/service"
 )
 
 // Dependency ... 依存性

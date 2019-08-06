@@ -3,8 +3,8 @@ package push
 import (
 	"context"
 
-	"github.com/abyssparanoia/rapid-go/src/lib/jsonrpc2"
-	"github.com/abyssparanoia/rapid-go/src/lib/log"
+	"github.com/abyssparanoia/operationAPI-GCP/src/lib/jsonrpc2"
+	"github.com/abyssparanoia/operationAPI-GCP/src/lib/log"
 )
 
 type entryParams struct {

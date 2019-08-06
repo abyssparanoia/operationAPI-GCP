@@ -1,4 +1,4 @@
-module github.com/abyssparanoia/rapid-go
+module github.com/abyssparanoia/operationAPI-GCP
 
 go 1.12
 

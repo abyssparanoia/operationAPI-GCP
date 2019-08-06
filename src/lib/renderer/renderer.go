@@ -10,8 +10,8 @@ import (
 	"golang.org/x/text/encoding/japanese"
 	"golang.org/x/text/transform"
 
-	"github.com/abyssparanoia/rapid-go/src/lib/errcode"
-	"github.com/abyssparanoia/rapid-go/src/lib/log"
+	"github.com/abyssparanoia/operationAPI-GCP/src/lib/errcode"
+	"github.com/abyssparanoia/operationAPI-GCP/src/lib/log"
 )
 
 // HandleError ... 一番典型的なエラーハンドリング

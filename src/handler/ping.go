@@ -3,7 +3,7 @@ package handler
 import (
 	"net/http"
 
-	"github.com/abyssparanoia/rapid-go/src/lib/log"
+	"github.com/abyssparanoia/operationAPI-GCP/src/lib/log"
 )
 
 // Ping ... 生存確認

@@ -1,6 +1,6 @@
 ## what is this
 
-- rapid-go for running on container
+- operationAPI-GCP for running on container
 - using cloud build for CI/CD
 
 ## how to develop
