@@ -13,7 +13,10 @@ FROM build_base AS server_builder
 COPY . .
 RUN CGO_ENABLED=1 GOOS=linux GOARCH=amd64 go install -a -tags netgo -ldflags '-w -extldflags "-static"' .
 
-FROM alpine AS server
+FROM google/cloud-sdk:alpine AS server
+
+ENV PORT 8080
+EXPOSE 8080
 
 RUN apk add ca-certificates
 COPY --from=server_builder /go/bin/operationAPI-GCP /bin/operationAPI-GCP
@@ -21,6 +24,12 @@ COPY --from=server_builder /go/src/github.com/abyssparanoia/operationAPI-GCP/.en
 COPY --from=server_builder /go/src/github.com/abyssparanoia/operationAPI-GCP/serviceAccount.json /go/src/github.com/abyssparanoia/operationAPI-GCP/serviceAccount.json
 
 WORKDIR /go/src/github.com/abyssparanoia/operationAPI-GCP
+
+RUN apk --no-cache --update upgrade \
+    && apk add --no-cache git alpine-sdk \
+    && gcloud auth activate-service-account --key-file ./serviceAccount.json \
+    && gcloud components install alpha \
+    && gcloud components update 
 
 ENV PORT 8080
 EXPOSE 8080
