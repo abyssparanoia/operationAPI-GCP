@@ -1,11 +1,11 @@
 steps:
   - id: Download serviceAccount.json
     name: gcr.io/cloud-builders/gsutil
-    args: ["cp", "gs://$PROJECT_ID-secret/serviceAccount.json", "./"]
+    args: ["cp", "gs://$PROJECT_ID-secret/operation/serviceAccount.json", "./"]
 
   - id: Download dotenv
     name: gcr.io/cloud-builders/gsutil
-    args: ["cp", "gs://$PROJECT_ID-secret/.env", "./"]
+    args: ["cp", "gs://$PROJECT_ID-secret/operation/.env", "./"]
 
   - id: Build docker image
     name: gcr.io/cloud-builders/docker
