@@ -7,7 +7,6 @@ import (
 
 	"github.com/abyssparanoia/operationAPI-GCP/src/handler"
 	"github.com/abyssparanoia/operationAPI-GCP/src/lib/accesscontrol"
-	"github.com/abyssparanoia/operationAPI-GCP/src/lib/deploy"
 )
 
 // Routing ... ルーティング設定
@@ -23,17 +22,8 @@ func Routing(r *chi.Mux, d *Dependency) {
 
 	// 例: サブルーティング
 	r.Route("/v1", func(r chi.Router) {
-		// API
-		r.With(d.FirebaseAuth.Handle).Get("/sample", d.SampleHandler.Sample)
-
-		// API(JSONRPC2)
-		r.With(d.FirebaseAuth.Handle).Post("/rpc", d.JSONRPC2Handler.Handle)
+		r.Get("/backup/firestore", d.BackupHandler.Firestore)
 	})
-
-	// 例: Stagingのみ適用したいルーティング
-	if deploy.IsStaging() {
-		// ここにルーティングを書く
-	}
 
 	http.Handle("/", r)
 }

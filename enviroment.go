@@ -11,8 +11,9 @@ type Environment struct {
 	ProjectID string `envconfig:"PROJECT_ID"                     required:"true"`
 	// LocationID      string `envconfig:"LOCATION_ID"                    default:"asia-northeast1"`
 	// ServiceID       string `envconfig:"SERVICE_ID"                     required:"true"`
-	CredentialsPath string `envconfig:"GOOGLE_APPLICATION_CREDENTIALS" required:"true"`
-	MinLogSeverity  string `envconfig:"MIN_LOG_SEVERITY"               required:"true"`
+	CredentialsPath  string `envconfig:"GOOGLE_APPLICATION_CREDENTIALS" required:"true"`
+	BackupBucketName string `envconfig:"BACKUP_BUCKET_NAME" required:"true"`
+	MinLogSeverity   string `envconfig:"MIN_LOG_SEVERITY"               required:"true"`
 }
 
 // Get ... 環境変数を取得する
