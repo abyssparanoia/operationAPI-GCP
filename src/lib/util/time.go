@@ -50,3 +50,8 @@ func TimeHoursToMiliseconds(hours int) int64 {
 func TimeDaysToMiliseconds(days int) int64 {
 	return int64(days * 24 * 60 * 60 * 1000)
 }
+
+// TimeTodayString ... 現在日付をRFC3339の形式で文字列として取得する
+func TimeTodayString() string {
+	return time.Now().UTC().In(TimeZoneJST()).Format(time.RFC3339)
+}
