@@ -69,3 +69,6 @@ data
 ## secret
 serviceAccount.json
 .env
+
+## fresh
+tmp
