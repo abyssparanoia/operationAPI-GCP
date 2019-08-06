@@ -30,7 +30,7 @@ steps:
         "beta",
         "run",
         "deploy",
-        "api",
+        "operation",
         "--project",
         "${PROJECT_ID}",
         "--image",
