@@ -20,6 +20,9 @@ EXPOSE 8080
 
 RUN apk --no-cache --update upgrade \
     && apk add --no-cache git alpine-sdk \
-    && go get github.com/pilu/fresh
+    && go get github.com/pilu/fresh \
+    && gcloud auth activate-service-account --key-file ./serviceAccount.json \
+    && gcloud components install alpha \
+    && gcloud components update 
 
 CMD fresh 
